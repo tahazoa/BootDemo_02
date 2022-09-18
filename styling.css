@@ -1,0 +1,94 @@
+body {
+    background-color: tan;
+}
+@media screen and (max-width: 360px) {
+    #link1 a{
+     color: slateblue;
+     padding: auto;
+     background-color: gray;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     overflow: hidden;
+
+    }
+}
+
+h3 {
+    text-decoration: underline;
+    font-size: large;
+    font-weight: bold;
+}
+section article {
+    margin-left: .2em;
+    width: 22em;
+    border-radius: 10px;
+    margin-top: .3em;
+    border: 2px solid slateblue;
+    color: slateblue;
+    padding: 3em 4vh; 
+    /* background: red; */
+}
+
+label {
+    color: crimson;
+    text-decoration: underline;
+    padding: 2em;
+    font-family: consolas;
+    font-size: large;
+    position: relative;
+    transform: translate(-32px);
+}
+input {
+    width: 70em;
+    height: 3.4em;
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 5.5px;
+    caret-color: blueviolet;
+}
+input::placeholder{
+    color: red;
+    transform: translate(28.5em);
+    
+}
+#SeachBar input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 360px) {
+    input {
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+     /* transform: translate(-5px); */
+        width: 19.7em;
+        height: 50px;
+     
+    }
+
+}@media screen and (max-width: 360px) {
+    input::placeholder {
+        font-size: 10px;
+        transform: translate(90px);
+     
+    }
+}
+
+ul li {
+    list-style: none;
+    transform: translate(4.7em , 8em);
+    padding-top: 3em;
+    border: 2px solid blue;
+    width: 9em;
+    padding: 3em;
+    height: 5px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: crimson;
+}

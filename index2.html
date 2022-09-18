@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styling.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styling.css">
+    <title>SEARCH KEYWORDS</title>
+</head>
+
+<body>
+
+    <a id="back_btn" href="index.html"> Back to Home </a>
+    <div id="SeachBar" class="container">
+        <label for="">SEARH KEYWORD</label>
+        <input type="text" id="MyInput" placeholder="Seach Your Keywords Here" required onkeyup="SearchKEYS()" />
+        <ul id="MyUL">
+            <li> <a href="#">Taha</a></li>
+            <li> <a href="#">Shamir</a></li>
+            <li> <a href="#">Khalid</a></li>
+            <li> <a href="#">Tariq</a></li>
+            <li> <a href="#">Zuhaib</a></li>
+            <li> <a href="#">kaleem</a></li>
+            <li> <a href="#">Ismail</a></li>
+            <li> <a href="#">Faizan</a></li>
+            <li> <a href="#">Sohail</a></li>
+            <li> <a href="#">Moin</a></li>
+            <li> <a href="#">Shaan</a></li>
+            <li> <a href="#">Rameez</a></li>
+            <li> <a href="#">Nofil</a></li>
+            <li> <a href="#">Farhan</a></li>
+            <li> <a href="#">Aakash</a></li>
+            <li> <a href="#">Umer</a></li>
+            <li> <a href="#">Mohsin</a></li>
+            <li> <a href="#">Zarrar</a></li>
+            <li> <a href="#">Usama</a></li>
+            <li> <a href="#">Sheeraz</a></li>
+            <li> <a href="#">Ashar</a></li>
+            <li> <a href="#">Anas</a></li>
+        </ul>
+    </div>
+    <script defer>
+        
+        const SearchKEYS = () => {
+            let filter = document.getElementById('MyInput').value.toUpperCase();
+
+            let ul = document.getElementById('MyUL');
+            let li = ul.getElementsByTagName('li');
+
+            for (var i = 0; 1 <li.length; i++) {
+                let a = li[i].getElementsByTagName('a')[0];
+
+                let textValue = a.textContent || a.innerHTML;
+
+                if (textValue.toUpperCase().indexOf(filter) > -1){
+                    li[i].style.display = '';
+                }
+                else {
+                    li[i].style.display = 'none';
+                }
+            }
+        }
+    </script>
+
+</body>
+
+</html>

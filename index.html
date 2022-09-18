@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"defer></script>
+</head>
+<body>
+    <nav class="navbar bg-light fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index2.html">&times; PROTOTYPE </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <br><br>
+      <br><br>
+      <br><br>
+      <form class="row g-1">
+        <div class="col-md-4">
+          <label for="validationServer01" class="form-label">First name</label>
+          <input type="text" class="form-control is-valid" id="validationServer01" value="Mark" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationServer02" class="form-label">Last name</label>
+          <input type="text" class="form-control is-valid" id="validationServer02" value="Otto" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationServerUsername" class="form-label">Username</label>
+          <div class="input-group has-validation">
+            <span class="input-group-text" id="inputGroupPrepend3">@</span>
+            <input type="text" class="form-control is-invalid" id="validationServerUsername" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
+            <div id="validationServerUsernameFeedback" class="invalid-feedback">
+              Please choose a username.
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <label for="validationServer03" class="form-label">City</label>
+          <input type="text" class="form-control is-invalid" id="validationServer03" aria-describedby="validationServer03Feedback" required>
+          <div id="validationServer03Feedback" class="invalid-feedback">
+            Please provide a valid city.
+          </div>
+        </div>
+        <div class="col-md-3">
+          <label for="validationServer04" class="form-label">State</label>
+          <select class="form-select is-invalid" id="validationServer04" aria-describedby="validationServer04Feedback" required>
+            <option selected disabled value="">Choose...</option>
+            <option>...</option>
+          </select>
+          <div id="validationServer04Feedback" class="invalid-feedback">
+            Please select a valid state.
+          </div>
+        </div>
+        <div class="col-md-3">
+          <label for="validationServer05" class="form-label">Zip</label>
+          <input type="text" class="form-control is-invalid" id="validationServer05" aria-describedby="validationServer05Feedback" required>
+          <div id="validationServer05Feedback" class="invalid-feedback">
+            Please provide a valid zip.
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" aria-describedby="invalidCheck3Feedback" required>
+            <label class="form-check-label" for="invalidCheck3">
+              Agree to terms and conditions
+            </label>
+            <div id="invalidCheck3Feedback" class="invalid-feedback">
+              You must agree before submitting.
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <button class="btn btn-primary" type="submit">Submit form</button>
+        </div>
+      </form>
+      <br>
+      <br>
+      <form class="row g-3">
+        <div class="col-md-6">
+          <label for="inputEmail4" class="form-label">Email</label>
+          <input type="email" class="form-control" id="inputEmail4">
+        </div>
+        <div class="col-md-6">
+          <label for="inputPassword4" class="form-label">Password</label>
+          <input type="password" class="form-control" id="inputPassword4">
+        </div>
+        <div class="col-12">
+          <label for="inputAddress" class="form-label">Address</label>
+          <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+        </div>
+        <div class="col-12">
+          <label for="inputAddress2" class="form-label">Address 2</label>
+          <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+        </div>
+        <div class="col-md-6">
+          <label for="inputCity" class="form-label">City</label>
+          <input type="text" class="form-control" id="inputCity">
+        </div>
+        <div class="col-md-4">
+          <label for="inputState" class="form-label">State</label>
+          <select id="inputState" class="form-select">
+            <option selected>Choose...</option>
+            <option>...</option>
+          </select>
+        </div>
+        <div class="col-md-2">
+          <label for="inputZip" class="form-label">Zip</label>
+          <input type="text" class="form-control" id="inputZip">
+        </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              Check me out
+            </label>
+          </div>
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">Sign in</button>
+        </div>
+      </form>
+
+      <div class="container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur fugiat omnis illum laudantium voluptatem expedita aliquam? Placeat cumque fugit, deleniti expedita illum excepturi corporis repudiandae nostrum tenetur optio recusandae quod voluptas similique tempora aperiam. Sunt a earum, mollitia aperiam voluptatum blanditiis repellendus magnam molestiae, voluptatem voluptates similique laboriosam officia eligendi ipsam animi, maiores rerum quam nisi! Odio reiciendis dolor laudantium natus commodi. Odit eligendi beatae dicta labore explicabo. Perspiciatis dolorum omnis ratione nostrum, veritatis dolorem quae laboriosam repellat aspernatur voluptates cupiditate pariatur voluptatibus! Atque neque quos sint dolore odio, eveniet, totam fugit reprehenderit perspiciatis, iste aliquid earum delectus. Esse tenetur saepe voluptatum accusamus iste nemo dolorem, aut est explicabo laboriosam culpa officia, laudantium, consectetur non consequatur. Ullam odio molestiae dolorem iure velit cumque praesentium maiores impedit voluptatem, earum dicta, voluptatibus delectus voluptates recusandae. Laborum aspernatur hic optio minus ea adipisci libero. Rerum, non porro consectetur quod eaque facilis ab maiores, recusandae mollitia doloremque at earum nesciunt quo laborum ipsam est, similique nostrum eum laudantium quos optio ad neque. Placeat sit voluptatibus officiis consequatur quasi rem omnis at aliquam nulla mollitia ab sapiente et inventore corporis doloremque, ipsam, quibusdam nemo voluptas. Eos, nisi obcaecati, vitae quisquam magni nesciunt in commodi eligendi libero aliquid recusandae quaerat illum minima incidunt quos debitis aspernatur. Pariatur quisquam optio inventore sunt quibusdam mollitia obcaecati, sint nobis nulla non culpa vitae deserunt quasi enim quo? Itaque, vero ipsa corporis, earum explicabo nobis natus, quidem voluptatum odio repellendus eaque? Voluptatum, nemo ipsa? Porro, culpa rem? Doloremque beatae aliquam suscipit cumque quisquam quasi a reiciendis possimus optio pariatur ut autem, fugiat ducimus. Error, voluptate accusantium reprehenderit odit repudiandae sunt, libero quasi placeat iste dolor numquam. Consectetur excepturi ea distinctio corrupti fuga rerum est qui tenetur optio labore sint laudantium repellendus saepe exercitationem nemo assumenda minima quod, quo aperiam aliquam eum a! Deleniti, eaque aut ex accusamus nihil obcaecati consectetur beatae pariatur nobis minus asperiores debitis unde rem nisi dicta. Rem quibusdam, sequi officia, quidem deleniti ducimus facere natus beatae magni quaerat inventore. Quas fuga molestias nisi culpa nemo adipisci rem, quod molestiae. Praesentium, nam esse? Voluptatum, quibusdam ea! Modi sint ex asperiores expedita ut fugiat <span ondrag="DRAG()"> DRAG THAT </span> , illum amet consequatur nemo sit perspiciatis, assumenda officiis laborum explicabo magni nulla nesciunt. Ab qui quae quibusdam voluptate temporibus delectus, blanditiis adipisci molestias ad autem voluptates quam labore vel magnam atque nostrum aperiam alias consequatur amet magni dolorum sint minus. Deleniti expedita nihil quo vel fugit suscipit, quidem qui ratione adipisci, illum corporis nisi, cumque accusamus explicabo! At maxime cumque dignissimos deleniti provident consequuntur labore cupiditate et pariatur possimus aperiam, nemo ex illo asperiores eveniet laudantium a ullam ea blanditiis deserunt animi, repellat ratione? Rerum perferendis, ex minima rem iste animi consequuntur sed facere nesciunt exercitationem voluptas deleniti! Ipsum soluta optio eius, distinctio quae vero voluptas doloremque quasi neque aspernatur numquam non consequatur dolor dolorem quisquam magni eos, amet omnis beatae repudiandae facilis quod quaerat? Debitis, facilis? Animi veritatis maxime ut unde fugiat? Earum animi sunt ut consectetur eum harum, dicta nesciunt?</p>
+      </div>
+
+      <script defer>
+            function DRAG() {
+                alert ("USERNAME: TAHA; \n PASSWORD: SXXXXW23; \n EMAIL: xxx@gmail.com")
+            }
+      </script>
+</body>
+</html>
